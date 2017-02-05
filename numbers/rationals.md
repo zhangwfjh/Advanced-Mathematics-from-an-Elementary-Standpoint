@@ -46,4 +46,4 @@ $$\frac{p_1}{q_1}+\frac{r_1}{s_1}=\frac{p_1s_1+q_1r_1}{q_1s_1}=\frac{p_1q_2s_1s_
 
 我们说比例数具有全序性，因为任意两个比例数都可以作比较，或者说比例数可以被分布在一根数轴上。
 
-比例数还具有稠密性，任意接近的两个比例数$$\frac pq,\frac rs$$中，存在任意多个比例数$$t$$满足$$\frac pq\leq t\leq\frac rs$$，例如$$t=\frac{p+r}{q+s}$$。
+比例数还具有稠密性，任意接近的两个比例数$$\frac pq,\frac rs$$中，存在任意多个比例数$$t$$满足$$\frac pq\leq t\leq\frac rs$$，例如$$t=\frac pq \oplus \frac rs：=\frac{p+r}{q+s}$$。

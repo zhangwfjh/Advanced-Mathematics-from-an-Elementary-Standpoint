@@ -7,7 +7,7 @@
 ## Numbers
 
 * [Rationals](numbers/rationals.md)
-* Reals
+* [Reals](numbers/reals.md)
 * Complex numbers
 * Hyperreals
 * Quaternions
