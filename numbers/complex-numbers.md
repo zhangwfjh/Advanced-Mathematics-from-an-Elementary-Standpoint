@@ -1,4 +1,5 @@
-# 复数
+#
+复数
 
 ## 复数的构造
 
@@ -26,18 +27,18 @@
 
 ### 复数的三角形式
 
-因为复数可以表示为有序实数对，可以认为复数是平面上一点。因此还可以定义与$$0$$的长度和角度，分别称为**模长**$$|z|=\sqrt{a^2+b^2}=\sqrt{z \bar z}$$和**幅角**$$\arg z=\arctan \frac ba +k\pi~(\arg z \in (-\pi,\pi])$$。写成三角形式：$$z=r(\cos\varphi+i\sin\varphi)=:r cis\varphi$$。
+因为复数可以表示为有序实数对，可以认为复数是平面上一点。因此还可以定义与$$0$$的长度和角度，分别称为**模长**$$|z|=\sqrt{a^2+b^2}=\sqrt{z \bar z}$$和**幅角**$$\arg z=\arctan \frac ba +k\pi~(\arg z \in (-\pi,\pi])$$。写成三角形式：$$z=r(\cos\varphi+i\sin\varphi)=:r\mathop{cis}\varphi$$。
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Complex_number_illustration_modarg.svg/440px-Complex_number_illustration_modarg.svg.png)
 
-假设复数$$z=a+bi=(a,b)=r\operatorname{cis}\varphi,w=c+di=(c,d)=s\operatorname{cis}\theta$$，根据四则运算
+假设复数$$z=a+bi=(a,b)=r\mathop{cis}\varphi,w=c+di=(c,d)=s\mathop{cis}\theta$$，根据四则运算
 
 * $$z \pm w=(a,b)\pm(c,d)=(a\pm c,b\pm d)=w \pm z$$
 
 复数的加减法几何上就是向量的加减法；
 
-* $$\begin{align}zw&=r\operatorname{cis}\varphi\cdot s\operatorname{cis}\theta=rs(\cos\varphi+i\sin\varphi)(\cos\theta+i\sin\theta)\\&=rs((\cos\varphi\cos\theta-\sin\varphi\sin\theta)+i(\cos\varphi\sin\theta+\sin\varphi\cos\theta))\\&=rs(\cos(\varphi+\theta)+i\sin(\varphi+\theta))=rs\operatorname{cis}(\varphi+\theta)\end{align}$$
-* $$z/w=\frac rs\operatorname{cis}(\varphi-\theta)$$
+* $$\begin{align}zw&=r\mathop{cis}\varphi\cdot s\mathop{cis}\theta=rs(\cos\varphi+i\sin\varphi)(\cos\theta+i\sin\theta)\\&=rs((\cos\varphi\cos\theta-\sin\varphi\sin\theta)+i(\cos\varphi\sin\theta+\sin\varphi\cos\theta))\\&=rs(\cos(\varphi+\theta)+i\sin(\varphi+\theta))=rs\mathop{cis}(\varphi+\theta)\end{align}$$
+* $$z/w=\frac rs\mathop{cis}(\varphi-\theta)$$
 
 复数的乘除法长度上是长度相乘除，角度上是角度相加减。因此，通过复数除法，我们可以计算两个向量的；
 
@@ -47,8 +48,8 @@
 
 ### 复数的指数形式
 
-注意到复数的乘法，从幅角上看，相当于幅角的加法，这与指数函数类似。实际上，$$\operatorname{cis}\varphi=e^{i\varphi}$$，这是著名的**欧拉公式**。注意指数上是虚数，否则将与长度乘法不兼容。特别地，令$$\varphi=\pi/2$$，我们有$$e^{i\pi/2}=i$$，因此虚单位$$i$$还可以看作是逆时针旋转$$\pi/2$$；如果令$$\varphi=\pi$$，我们还有$$e^{i\pi}=\operatorname{cis}\pi=\cos\pi=-1$$，或者$$e^{i\pi}+1=0$$。
+注意到复数的乘法，从幅角上看，相当于幅角的加法，这与指数函数类似。实际上，$$\mathop{cis}\varphi=e^{i\varphi}$$，这是著名的**欧拉公式**。注意指数上是虚数，否则将与长度乘法不兼容。特别地，令$$\varphi=\pi/2$$，我们有$$e^{i\pi/2}=i$$，因此虚单位$$i$$还可以看作是逆时针旋转$$\pi/2$$；如果令$$\varphi=\pi$$，我们还有$$e^{i\pi}=\mathop{cis}\pi=\cos\pi=-1$$，或者$$e^{i\pi}+1=0$$。
 
-我们做如下计算：$$\operatorname{cis}n\theta=e^{in\theta}=(e^{i\theta})^n=(\operatorname{cis}\theta)^n$$，这是著名的**棣莫弗公式**。棣莫弗公式让我们可以很容易的计算正余弦函数的倍角公式。例如$$\operatorname{cis}2\theta=(\operatorname{cis}\theta)^2=\cos^2\theta-\sin^2\theta+2i\cos\theta\sin\theta$$，故$$\cos2\theta=\Re\operatorname{cis}2\theta=\cos^2\theta-\sin^2\theta,\sin2\theta=\Im\operatorname{cis}2\theta=2\cos\theta\sin\theta$$。
+我们做如下计算：$$\mathop{cis}n\theta=e^{in\theta}=(e^{i\theta})^n=(\mathop{cis}\theta)^n$$，这是著名的**棣莫弗公式**。棣莫弗公式让我们可以很容易的计算正余弦函数的倍角公式。例如$$\mathop{cis}2\theta=(\mathop{cis}\theta)^2=\cos^2\theta-\sin^2\theta+2i\cos\theta\sin\theta$$，故$$\cos2\theta=\Re\mathop{cis}2\theta=\cos^2\theta-\sin^2\theta,\sin2\theta=\Im\mathop{cis}2\theta=2\cos\theta\sin\theta$$。
 
 复数的出现不仅解决了形如$$x^2=-1$$的方程无实数解的问题，也启发了我们数不一定是一个量，还可以是一种操作（例如旋转），数可以是多个量的结合体（例如长度和角度）。
