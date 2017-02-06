@@ -26,7 +26,7 @@
 
 ### 复数的三角形式
 
-因为复数可以表示为有序实数对，可以认为复数是平面上一点。因此还可以定义与$$0$$的长度和角度，分别称为**模长**$$|z|=\sqrt{a^2+b^2}=\sqrt{z \bar z}$$和**幅角**$$\arg z=\arctan \frac ba +k\pi~(\arg z \in (-\pi,\pi])$$。写成三角形式：$$z=r(\cos\varphi+i\sin\varphi)=:r\operatorname{cis}\varphi$$。
+因为复数可以表示为有序实数对，可以认为复数是平面上一点。因此还可以定义与$$0$$的长度和角度，分别称为**模长**$$|z|=\sqrt{a^2+b^2}=\sqrt{z \bar z}$$和**幅角**$$\arg z=\arctan \frac ba +k\pi~(\arg z \in (-\pi,\pi])$$。写成三角形式：$$z=r(\cos\varphi+i\sin\varphi)=:r cis\varphi$$。
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Complex_number_illustration_modarg.svg/440px-Complex_number_illustration_modarg.svg.png)
 

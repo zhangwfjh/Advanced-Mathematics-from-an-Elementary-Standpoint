@@ -9,7 +9,7 @@
 * [Rationals](numbers/rationals.md)
 * [Reals](numbers/reals.md)
 * [Complex numbers](numbers/complex-numbers.md)
-* Quaternions
+* [Quaternions](numbers/quaternions.md)
 * Hyperreals
 
 ## Calculus
