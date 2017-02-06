@@ -1,5 +1,4 @@
-#
-复数
+# 复数
 
 ## 复数的构造
 
@@ -37,7 +36,7 @@
 
 复数的加减法几何上就是向量的加减法；
 
-* $$\begin{align}zw&=r\mathop{cis}\varphi\cdot s\mathop{cis}\theta=rs(\cos\varphi+i\sin\varphi)(\cos\theta+i\sin\theta)\\&=rs((\cos\varphi\cos\theta-\sin\varphi\sin\theta)+i(\cos\varphi\sin\theta+\sin\varphi\cos\theta))\\&=rs(\cos(\varphi+\theta)+i\sin(\varphi+\theta))=rs\mathop{cis}(\varphi+\theta)\end{align}$$
+* $$zw=r\mathop{cis}\varphi\cdot s\mathop{cis}\theta=rs(\cos\varphi+i\sin\varphi)(\cos\theta+i\sin\theta)$$$$=rs((\cos\varphi\cos\theta-\sin\varphi\sin\theta)+i(\cos\varphi\sin\theta+\sin\varphi\cos\theta))$$$$=rs(\cos(\varphi+\theta)+i\sin(\varphi+\theta))=rs\mathop{cis}(\varphi+\theta)$$
 * $$z/w=\frac rs\mathop{cis}(\varphi-\theta)$$
 
 复数的乘除法长度上是长度相乘除，角度上是角度相加减。因此，通过复数除法，我们可以计算两个向量的；
