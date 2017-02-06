@@ -20,7 +20,7 @@
 
 * $$(a+b\epsilon) \pm (c+d\epsilon)=(a \pm c)+(b \pm d)\epsilon$$
 * $$(a+b\epsilon)(c+d\epsilon)=ac+(ad+bc)\epsilon$$
-* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon})(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-\epsilon^2} = \frac ac - \frac{bc-ad}{c^2}\epsilon}$$
+* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon)(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-\epsilon^2} = \frac ac - \frac{bc-ad}{c^2}\epsilon}$$
 
 ## 超实数
 
