@@ -12,6 +12,8 @@
 
 对于集合$$S$$中的每个元素$$x$$，称所有与$$x$$等价的元素构成的集合为$$x$$的**等价类**，记作$$[x]:=\{y\in S\vert x\sim y\}$$。$$S$$中所有的等价类构成的集合称为**商集**，记作$$S \setminus \sim := \{ [x] \vert x\in S\}$$。集合上的等价关系唯一确定一个商集。
 
+举个例子，在整数$$\mathbb Z$$上定义等价关系$$x\equiv y \mod p$$，则等价类有$$[0]:=p\mathbb Z,[1]:=p\mathbb Z+1,\ldots,[p-1]:=p\mathbb Z+(p-1)$$，该等价关系确定的商集定义为$$\mathbb Z_p:=\mathbb Z \setminus \sim=\mathbb Z \setminus p\mathbb Z=\{0,1,\ldots,p-1\}$$。
+
 ## 比例数的构造
 
 **比例数**，顾名思义，是由两个数的比构成的数。具体来说，任取两个整数$$p,q\in\mathbb Z$$满足$$q\neq0$$，则有序数对$$(p,q)$$ 为一比例数，也记作$$p:q$$ 或$$\frac pq$$。一个比例数有无穷多种表示，我们认为两个比例数$$\frac pq,\frac rs$$ 相等，当且仅当$$ps=qr$$，这是一个等价关系$$\sim$$。所有这样的有序数对构成的集合称作比例数域$$\mathbb Q$$，即$$\mathbb Q:=\mathbb Z \times \mathbb Z^+ \setminus \sim$$。
@@ -22,17 +24,17 @@
 
 ## 算数运算
 
-对于任意两个比例数$$\frac pq,\frac rs$$，我们可以定义加减法$$\pm$$、乘法$$\times$$和除法$$\div$$：
+对于任意两个比例数$$\frac pq,\frac rs$$，我们定义加减法$$\pm$$、乘法$$\times$$和除法$$\div$$：
 
-* $$\frac pq\pm\frac rs := \frac{ps \pm qr}{qs}$$
-* $$\frac pq\times \frac rs := \frac{pr}{qs}$$
-* $$\frac pq \div \frac rs := \frac pq \times \frac sr$$ (若$$r\neq0$$)
+* $$\displaystyle{\frac pq\pm\frac rs := \frac{ps \pm qr}{qs}}$$
+* $$\displaystyle{\frac pq\times \frac rs := \frac{pr}{qs}}$$
+* $$\displaystyle{\frac pq \div \frac rs := \frac pq \times \frac sr}$$ (若$$r\neq0$$)
 
 需要证明以上定义是良好的，即运算结果与代表元无关。我们只对加法进行证明，其余留给读者。
 
 **证明**：令$$\frac{p_1}{q_1} \sim \frac{p_2}{q_2}, \frac{r_1}{s_1} \sim \frac{r_2
 }{s_2}$$，则根据定义，有$$p_1q_2=p_2q_1, r_1s_2=r_2s_1$$，那么，
-$$\frac{p_1}{q_1}+\frac{r_1}{s_1}=\frac{p_1s_1+q_1r_1}{q_1s_1}=\frac{p_1q_2s_1s_2+q_1q_2r_1s_2}{(q_1s_1)(q_2s_2)}=\frac{p_2q_1s_1s_2+q_1q_2r_2s_1}{(q_1s_1)(q_2s_2)}=\frac{p_2s_2+q_2r_2}{q_2s_2}=\frac{p_2}{q_2}+\frac{r_2}{s_2}$$
+$$\displaystyle{\frac{p_1}{q_1}+\frac{r_1}{s_1}=\frac{p_1s_1+q_1r_1}{q_1s_1}=\frac{p_1q_2s_1s_2+q_1q_2r_1s_2}{(q_1s_1)(q_2s_2)}=\frac{p_2q_1s_1s_2+q_1q_2r_2s_1}{(q_1s_1)(q_2s_2)}=\frac{p_2s_2+q_2r_2}{q_2s_2}=\frac{p_2}{q_2}+\frac{r_2}{s_2}}$$
 
 比例数的运算满足以下性质：
 
