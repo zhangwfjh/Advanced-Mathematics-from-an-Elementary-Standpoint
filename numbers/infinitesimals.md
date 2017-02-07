@@ -38,3 +38,4 @@
 
 * $$\mathop{st}({}^*r \pm {}^*s) = \mathop{st}{}^*r \pm \mathop{st}{}^*s$$
 * $$\mathop{st}({}^*r\cdot{}^*s) = \mathop{st}{}^*r \cdot \mathop{st}{}^*s$$
+* $$\mathop{st}\dfrac {^*r}{^*s} = \dfrac{\mathop{st}{}^*r}{\mathop{st}{}^*s} \qquad (\mathop{st}{}^*s \neq 0)$$
