@@ -2,19 +2,19 @@
 
 ## 对偶数
 
-考虑在实数域$$\mathbb R$$中加入一个正无穷小量$$\epsilon$$，满足$$\epsilon > 0 \wedge \epsilon^2 = 0$$。尽管在实数范围内，该方程有唯一解$$0$$，但并不妨碍新加入的**无穷小量**$$\epsilon\neq0$$。无穷小量还有以下性质：
+考虑在实数域$$\mathbb R$$中加入一个正无穷小量$$\epsilon$$，满足$$\epsilon \gt 0 \wedge \epsilon^2 = 0$$。尽管在实数范围内，该方程有唯一解$$0$$，但并不妨碍新加入的**无穷小量**$$\epsilon\neq0$$。无穷小量还有以下性质：
 
 * 正无穷小量小于任意正实数，负无穷小量大于任意负实数
 
-**证明**：$$\displaystyle{\forall r > 0: r-\epsilon=\frac{r^2-\epsilon^2}{r+\epsilon}=\frac{r^2}{r+\epsilon} > 0}$$
+**证明**：$$\displaystyle{\forall r \gt 0: r-\epsilon=\frac{r^2-\epsilon^2}{r+\epsilon}=\frac{r^2}{r+\epsilon} \gt 0}$$
 
 * 无穷小量的任意倍数仍然是无穷小，也就有，有限个无穷小量的和仍然是无穷小
 
-**证明**：否则，存在倍数$$n$$和实数$$r$$，使得$$n\epsilon > r$$，即$$\epsilon > \frac rn$$，与$$\epsilon$$是无穷小矛盾。
+**证明**：否则，存在倍数$$n$$和实数$$r$$，使得$$n\epsilon \gt r$$，即$$\epsilon \gt \frac rn$$，与$$\epsilon$$是无穷小矛盾。
 
 * 正无穷小量的倒数大于任意实数，即正无穷大
 
-**证明**：$$\displaystyle{\forall r > 0: \frac1r > \varepsilon > 0}$$，因此$$\displaystyle{r < \frac1\epsilon}$$
+**证明**：$$\displaystyle{\forall r \gt 0: \frac1r \gt \varepsilon \gt 0}$$，因此$$\displaystyle{r \lt \frac1\epsilon}$$
 
 类比复数的构造方法，可以构造对偶数域$$\mathbb R^\epsilon:=\mathbb R[\epsilon] \setminus (\epsilon^2)$$，所有的对偶数可以表示为$$a+b\epsilon$$。类似构造四则运算：
 
