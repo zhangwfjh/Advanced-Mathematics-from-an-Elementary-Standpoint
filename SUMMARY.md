@@ -13,8 +13,7 @@
 
 ## Calculus
 
-* Limits
-* Differential
+* [Limits](calculus/limits.md)
 * Derivatives
 * Antiderivatives
 * Taylor Series

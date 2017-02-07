@@ -20,7 +20,7 @@
 
 * $$(a+b\epsilon) \pm (c+d\epsilon)=(a \pm c)+(b \pm d)\epsilon$$
 * $$(a+b\epsilon)(c+d\epsilon)=ac+(ad+bc)\epsilon$$
-* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon)(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-\epsilon^2} = \frac ac - \frac{bc-ad}{c^2}\epsilon}$$
+* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon)(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-\epsilon^2} = \frac ac - \frac{bc-ad}{c^2}\epsilon} \qquad (c \neq 0)$$
 
 ## 超实数
 
@@ -33,4 +33,8 @@
 * 无穷小量的任意倍数仍然是无穷小，也就有，有限个无穷小量的和仍然是无穷小
 * 正无穷小量的倒数大于任意实数，即正无穷大
 
-超实数有一个重要的运算，称为**标准部**，记作$$\mathop{st}{}^*r$$，定义为柯西列的极限$$\lim_{n\to\infty}a_n=r$$。
+超实数有一个重要的运算，称为**标准部**，记作$$\mathop{st}{}^*r$$，定义为柯西列的极限$$\lim_{n\to\infty}a_n=r$$。不难证明，标准部满足以下性质：
+
+* $$\mathop{st}({}^*r \pm {}^*s) = \mathop{st}{}^*r \pm \mathop{st}{}^*s$$
+* $$\mathop{st}({}^*r\cdot{}^*s) = \mathop{st}{}^*r \cdot \mathop{st}{}^*s$$
+* $$\mathop{st}\Big(\dfrac {{}^*r}{{}^*s}\Big) = \dfrac{\mathop{st}{}^*r}{\mathop{st}{}^*s} \qquad (\mathop{st}{}^*s \neq 0)$$

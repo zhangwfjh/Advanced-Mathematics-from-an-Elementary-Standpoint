@@ -5,14 +5,14 @@
 定义集合$$S$$上的等价关系$$\sim$$为$$S\times S$$上的一个子集$$R$$，满足：
 
 * 自反性：$$x\sim x$$
-* 对称性：$$x \sim y \Rightarrow y \sim x$$
-* 传递性：$$x \sim y \wedge y \sim z \Rightarrow x \sim z$$
+* 对称性：$$x \sim y \implies y \sim x$$
+* 传递性：$$x \sim y \wedge y \sim z \implies x \sim z$$
 
 其中：$$x \sim y$$表示$$(x,y)\in R\subset S\times S$$。例如，整数相等$$=$$是一个等价关系，自然数同余$$\equiv$$也是等价关系，但整数比较$$<$$或者集合包含$$\subset$$不是等价关系。
 
 对于集合$$S$$中的每个元素$$x$$，称所有与$$x$$等价的元素构成的集合为$$x$$的**等价类**，记作$$[x]:=\{y\in S\vert x\sim y\}$$。$$S$$中所有的等价类构成的集合称为**商集**，记作$$S \setminus \sim := \{ [x] \vert x\in S\}$$。集合上的等价关系唯一确定一个商集。
 
-举个例子，在整数$$\mathbb Z$$上定义等价关系$$x\equiv y \mod p$$，则等价类有$$[0]:=p\mathbb Z,[1]:=p\mathbb Z+1,\ldots,[p-1]:=p\mathbb Z+(p-1)$$，该等价关系确定的商集定义为$$\mathbb Z_p:=\mathbb Z \setminus \sim=\mathbb Z \setminus p\mathbb Z=\{0,1,\ldots,p-1\}$$。
+举个例子，在整数$$\mathbb Z$$上定义等价关系$$x\equiv y \pmod p$$，则等价类有$$[0]:=p\mathbb Z,[1]:=p\mathbb Z+1,\ldots,[p-1]:=p\mathbb Z+(p-1)$$，该等价关系确定的商集定义为$$\mathbb Z_p:=\mathbb Z \setminus \sim=\mathbb Z \setminus p\mathbb Z=\{0,1,\ldots,p-1\}$$。
 
 ## 比例数的构造
 

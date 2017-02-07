@@ -19,7 +19,7 @@
 
 如果一个数列$$\{a_n\}^\infty_0$$满足$$\forall \varepsilon > 0, \exists N > 0, \forall k > N: |a_{k+1}-a_k| < \varepsilon$$，我们称$$\{a_n\}^\infty_0$$为**柯西列**。每一个柯西列定义一个实数，称为该柯西列的**极限**，记作$$\lim_{n\to\infty}a_n$$。
 
-特别地，我们定义$$\lim_{n\to\infty}a_n:=r$$如果$$\{a_n\}^\infty_0$$最终接近$$r$$，即任意一把尺子最终无法测量$$\{a_n\}^\infty_0$$与$$r$$的误差，用数学语言表示为$$\forall \varepsilon > 0, \exists N > 0, \forall k > N: |a_k-r| < \varepsilon$$。我们需要证明这个定义是良好的，即极限为$$r$$的比例数数列是柯西列。
+特别地，我们定义$$\lim_{n\to\infty}a_n:=r$$如果$$\{a_n\}^\infty_0$$最终无限接近$$r$$，即任意一把尺子最终无法测量$$\{a_n\}^\infty_0$$与$$r$$的误差，用数学语言表示为$$\forall \varepsilon > 0, \exists N > 0, \forall k > N: |a_k-r| < \varepsilon$$。我们需要证明这个定义是良好的，即极限为$$r$$的比例数数列是柯西列。
 
 **证明**：假设$$\lim_{n\to\infty}a_n:=r$$，据定义有$$\forall \varepsilon > 0, \exists N > 0, \forall k > N: |a_k-r| < \varepsilon/2 \wedge |a_{k+1}-r| < \varepsilon/2$$，故$$|a_{k+1}-a_k| = |(a_{k+1}-r)-(a_k-r)| \leq |a_{k+1}-r|+|a_k-r| < \varepsilon$$，故$$\{a_n\}^\infty_0$$是柯西列。
 
