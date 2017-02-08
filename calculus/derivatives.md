@@ -10,11 +10,13 @@
 
 在上图中，函数$$f(x)$$在红、蓝、紫色区间内是仿射函数，每一点的形变率可以由有向区间长度比直接求出；而在绿色区间内，定义域上相同长度的有向子区间在不同位置被$$f$$拉伸成为值域上不同长度的有向子区间。为了计算函数$$f$$在一点$$x$$的形变率，我们在充分小的有向区间$$(x,x')$$内，用一个仿射函数$$\tilde f$$逼近函数$$f$$，用仿射函数$$\tilde f$$的形变率作为函数$$f$$在点$$x$$的形变率，即$$k_f(x):=k_{\tilde f}$$。
 
-我们计算$$k_{\tilde f}$$，由于函数$$\tilde f$$的定义域$$(x,x')$$充分小，可考虑极限$$x'\to x$$，则$$k_{\tilde f}=\lim_{x'\to x}\dfrac{\overline{\tilde f(x)\tilde f(x')}}{\overline{xx'}}=\lim_{x'\to x}\dfrac{\tilde f(x')-\tilde f(x)}{x'-x}=\lim_{x'\to x}\dfrac{f(x')-f(x)}{x'-x}$$。等价地，如果扩展$$f$$到超实数域$$^*f$$，则$$k_{\bar f}=\mathop{st}\dfrac{^*f(^*x)-{}^*f(x)}{^*x-x}=\mathop{st}\dfrac{^*f(x+\varepsilon)-{}^*f(x)}{\varepsilon}$$。
+我们计算$$k_{\tilde f}$$，由于函数$$\tilde f$$的定义域$$(x,x')$$充分小，可考虑极限$$x'\to x$$，则$$k_{\tilde f}=\lim_{x'\to x}\dfrac{\overline{\tilde f(x)\tilde f(x')}}{\overline{xx'}}=\lim_{x'\to x}\dfrac{\tilde f(x')-\tilde f(x)}{x'-x}=\lim_{x'\to x}\dfrac{f(x')-f(x)}{x'-x}$$。等价地，如果扩展$$f$$到超实数域$$^*f$$，则$$k_{\tilde f}=\mathop{st}\dfrac{^*f(^*x)-{}^*f(x)}{^*x-x}=\mathop{st}\dfrac{^*f(x+\varepsilon)-{}^*f(x)}{\varepsilon}$$。
 
 我们称函数$$f$$在点$$x$$的变形率为**导数**，记作$$f'(x):=k_f(x)$$，导数是$$x$$的函数，也称$$f'$$是$$f$$的**导函数**。仿射函数$$\tilde f_x$$称为$$f$$在点$$x$$的**一阶逼近**，$$df_x=\overline{\tilde f(x)\tilde f(x+\varepsilon)}$$称为$$f$$在点$$x$$的**微分**。令恒等函数$$\iota(x)=x$$，则$$d\iota_x=dx=\varepsilon$$，则$$f'=\dfrac{df}{dx}$$，故导数也称为**微商**。
 
 请注意，导数是一种极限，故不一定存在，例如绝对值函数$$|x|$$在原点没有导数。如果函数$$f$$在点$$x$$处的导数存在，则称$$f$$在点$$x$$处**可导**，如果函数$$f'$$处处可导，则称$$f$$是**可导函数**。
+
+如果$$g(x)=f'(x)$$可导，还可计算$$g'(x)=f''(x)$$，称$$f$$的**二阶导数**。类似可定义函数$$f$$的**$$n$$阶导数**，记作$$f^{(n)}:=(f^{(n-1)})'$$。
 
 ## 性质
 
@@ -36,11 +38,14 @@
 3. $$(x^a)'=ax^{a-1}$$
 4. $$(\sin x)' = \cos x$$
 5. $$(\cos x)' = -\sin x$$
+6. 若$$P(x)=a_0+a_1x+\cdots+a_nx^n$$，则$$P^{(n)}(x)=n!$$
 
 证明留给读者。
 
 ## 应用
 
 考虑函数$$y=f(x)$$过点$$(x,f(x)), (x',f(x'))$$的割线$$l$$，$$l$$的斜率为$$k_l=\dfrac{f(x')-f(x)}{x'-x}$$，割线$$l$$在点$$x$$的一阶逼近是$$f$$在点$$x$$的切线，故$$f'(x)$$描述了函数$$f$$在点$$x$$处切线的斜率。
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Secant-calculus.svg/500px-Secant-calculus.svg.png)![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tangent-calculus.svg/500px-Tangent-calculus.svg.png)
 
 考虑函数$$f$$的形变率，如果$$f'(x) \gt 0$$，则$$f$$在点$$x$$处正向拉伸，即$$f$$递增；如果$$f'(x) \lt 0$$，则$$f$$在点$$x$$处反向拉伸，即$$f$$递减；如果$$f'(x) = 0$$，则$$f$$在$$x$$附近值不变，取得极大或极小值。特别地，如果$$f'(x)=0$$对所有实数恒成立，则$$f$$是常数。

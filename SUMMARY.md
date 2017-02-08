@@ -15,8 +15,8 @@
 
 * [Limits](calculus/limits.md)
 * [Derivatives](calculus/derivatives.md)
-* Antiderivatives
-* Taylor Series
+* [Taylor Series](calculus/taylor-series.md)
+* Integral
 * Differential Equations
 
 ## Linear Algebra
