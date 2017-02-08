@@ -49,6 +49,8 @@
 
 注意到复数的乘法，从幅角上看，相当于幅角的加法，这与指数函数类似。实际上，$$\mathop{cis}\varphi=e^{i\varphi}$$，这是著名的**欧拉公式**。注意指数上是虚数，否则将与长度乘法不兼容。特别地，令$$\varphi=\pi/2$$，我们有$$e^{i\pi/2}=i$$，因此虚单位$$i$$还可以看作是逆时针旋转$$\pi/2$$；如果令$$\varphi=\pi$$，我们还有$$e^{i\pi}=\mathop{cis}\pi=\cos\pi=-1$$，或者$$e^{i\pi}+1=0$$。
 
+根据欧拉公式，我们还可以得到三角函数的复数表达：$$\sin x=\dfrac{e^{ix}-e^{-ix}}{2}, \cos x=\dfrac{e^{ix}+e^{-ix}}{2}, \tan x = \dfrac{e^{ix}-e^{-ix}}{e^{ix}+e^{-ix}}$$
+
 我们做如下计算：$$\mathop{cis}n\theta=e^{in\theta}=(e^{i\theta})^n=(\mathop{cis}\theta)^n$$，这是著名的**棣莫弗公式**。棣莫弗公式让我们可以很容易的计算正余弦函数的倍角公式。例如$$\mathop{cis}2\theta=(\mathop{cis}\theta)^2=\cos^2\theta-\sin^2\theta+2i\cos\theta\sin\theta$$，故$$\cos2\theta=\Re\mathop{cis}2\theta=\cos^2\theta-\sin^2\theta,\sin2\theta=\Im\mathop{cis}2\theta=2\cos\theta\sin\theta$$。
 
 复数的出现不仅解决了形如$$x^2=-1$$的方程无实数解的问题，也启发了我们数不一定是一个量，还可以是一种操作（例如旋转），数可以是多个量的结合体（例如长度和角度）。
