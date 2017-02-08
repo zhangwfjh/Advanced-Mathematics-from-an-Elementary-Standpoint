@@ -24,7 +24,7 @@
 
 ## 超实数
 
-另外一种构造无穷小量的方法与构造实数的方法类似，通过柯西列来定义。考虑实数构成的柯西列$$\{a_n\}_0^\infty$$，如果实数数列的每一项都有$$a_n=r$$，则该柯西列定义为超实数$$r$$；如果$$\lim_{n\to\infty}a_n=0$$，则称该柯西列为超实数中的**无穷小量**。因此，任何一个超实数可以表示为一个实数和一个无穷小量的和，$${}^*r=r+\epsilon$$。记所有实数构成的柯西列为$$\mathscr C(\mathbb R)$$，两个柯西列等价$$\{a_n\}_0^\infty \sim \{b_n\}_0^\infty$$当且仅当$$\{|a_n-b_n|\}_0^\infty$$是无穷小量，则超实数可写为$$^*\mathbb R:=\mathscr C(\mathbb R)\setminus\sim$$。
+另外一种构造无穷小量的方法与构造实数的方法类似，通过柯西列来定义。考虑实数构成的柯西列$$\{a_n\}_0^\infty$$，如果实数数列的每一项都有$$a_n=r$$，则该柯西列定义为超实数$$r$$；如果$$\lim_{n\to\infty}a_n=0$$，则称该柯西列为超实数中的**无穷小量**。因此，任何一个超实数可以表示为一个实数和一个无穷小量的和，$${}^*r=r+\varepsilon$$。记所有实数构成的柯西列为$$\mathscr C(\mathbb R)$$，两个柯西列等价$$\{a_n\}_0^\infty \sim \{b_n\}_0^\infty$$当且仅当$$\{|a_n-b_n|\}_0^\infty$$是无穷小量，则超实数可写为$$^*\mathbb R:=\mathscr C(\mathbb R)\setminus\sim$$。
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Standard_part_function_with_two_continua.svg/720px-Standard_part_function_with_two_continua.svg.png)
 
