@@ -27,10 +27,11 @@
 3. $$\left(\dfrac fg\right)'=\dfrac{f'g-fg'}{g^2} \quad (g \neq 0)$$
 4. $$(f(g))'=f'(g) \cdot g'$$
 5. $$\dfrac{f'}{g'}=\dfrac{df}{dg}$$
+6. 若$$f$$是$$g$$的反函数，即$$f(g(x))=x$$，则$$g'=\dfrac{1}{f'(g)}$$
 
 **证明**: 性质1是极限的直接结果；性质2利用$$f(x')g(x')-f(x)g(x)=f(x')\big((g(x')-g(x)\big)+g(x)\big(f(x')-f(x)\big)$$即可；性质3只需证$$\left(\dfrac1g\right)'=-\dfrac{g'}{g^2}$$；注意到等式$$df(g)=\dfrac{df(g)}{dg}dg=f'(g)dg$$，性质4立即成立。
 
-特别地，对于$$n$$个可导函数$$f_1, f_2, \ldots f_n$$，根据性质4,$$df_1(f_2(\cdots(f_n)))=\dfrac{df_1}{df_2}df_2(\cdots(f_n))=\cdots=\dfrac{df_1}{df_2}\dfrac{df_2}{df_3}\cdots\dfrac{df_{n-1}}{df_n}df_n$$，因此性质4也称为**链式法则**。性质5是性质4的推论。
+特别地，对于$$n$$个可导函数$$f_1, f_2, \ldots f_n$$，根据性质4,$$df_1(f_2(\cdots(f_n)))=\dfrac{df_1}{df_2}df_2(\cdots(f_n))=\cdots=\dfrac{df_1}{df_2}\dfrac{df_2}{df_3}\cdots\dfrac{df_{n-1}}{df_n}df_n$$，因此性质4也称为**链式法则**。性质5、6是性质4的推论。
 
 ## 常见导数
 
@@ -40,6 +41,8 @@
 4. $$(\sin x)' = \cos x$$
 5. $$(\cos x)' = -\sin x$$
 6. 若$$P(x)=a_0+a_1x+\cdots+a_nx^n$$，则$$P^{(n)}(x)=n!$$
+7. $$(\arcsin x)'=\dfrac{1}{\sqrt{1-x^2}}$$
+8. $$(\arctan x)'=\dfrac{1}{1+x^2}$$
 
 证明留给读者。
 
@@ -57,10 +60,10 @@
 
 ## 运动分解
 
-令$$z=re^{i\theta}$$，根据链式法则，计算得$$dz=d(re^{i\theta})=e^{i\theta}dr+r(de^{i\theta})=e^{i\theta}dr+ire^{i\theta}d\theta=e^{i\theta}dr+izd\theta$$。如果$$\theta=0$$，则$$dz=dr$$退化实导数；如果$$r$$是常数，则$$dr=0$$，$$dz=ire^{i\theta}d\theta=re^{i(\theta+\pi/2)}d\theta$$，因此$$\dfrac{d(re^{i\theta})}{d\theta}=re^{i(\theta+\pi/2)}$$，即$$z$$对$$\theta$$的导数是$$z$$逆时针旋转$$\pi/2$$，两个复数相互垂直。
+令$$z=re^{i\theta}$$，根据链式法则，计算得$$dz=d(re^{i\theta})=e^{i\theta}dr+r(de^{i\theta})=e^{i\theta}dr+ire^{i\theta}d\theta=e^{i\theta}dr+izd\theta$$。如果$$\theta=0$$，则$$dz=dr$$退化实导数；如果$$r$$是常数，则$$dr=0$$，$$dz=ire^{i\theta}d\theta=re^{i(\theta+\pi/2)}d\theta$$，因此$$\dfrac{\partial(re^{i\theta})}{\partial\theta}=re^{i(\theta+\pi/2)}$$，即$$z$$对$$\theta$$的**偏导数**(即固定其余变量不变的导数)，是$$z$$逆时针旋转$$\pi/2$$，两个复数相互垂直。
 
-假设平面上的运动用复数$$z=z(t)$$来表示，其中$$t$$是时间参数，则$$z'(t)=\dfrac{dz}{dt}$$表示该运动在$$t$$时刻的速度。我们有$$z'(t)=e^{i\theta}r'+re^{i(\theta+\pi/2)}\theta'$$，其中$$e^{i\theta}r'$$表示该运动的**径向速度**，大小为$$r'$$；而$$re^{i(\theta+\pi/2)}\theta'$$表示运动的**轴向速度**，大小为$$r\theta'$$。这是平面运动的极分解。
+假设平面上的运动用复数$$z=z(t)$$来表示，其中$$t$$是时间参数，则$$z'(t)=\dfrac{dz}{dt}$$表示该运动在$$t$$时刻的速度。我们有$$z'(t)=e^{i\theta}r'+re^{i(\theta+\pi/2)}\theta'$$，其中$$e^{i\theta}r'$$表示该运动的**径向速度**，大小为$$r'$$；而$$re^{i(\theta+\pi/2)}\theta'$$表示运动的**环向速度**，大小为$$r\theta'$$。这是平面运动的极分解。
 
 ![](/assets/derivatives2.png)
 
-进一步我们还可以考虑加速度$$z''$$，不难计算$$z''=e^{i\theta}r''+re^{i(\theta+\pi/2)}\theta''-re^{i\theta}{\theta'}^2+2re^{i(\theta+\pi/2)}r'\theta'$$。其中$$e^{i\theta}r''$$是**径向加速度**，大小为$$r''$$；$$re^{i(\theta+\pi/2)}\theta''$$是**环向加速度**，大小为$$r\theta''$$；$$-re^{i\theta}{\theta'}^2$$是**向心加速度**，与径向相反，大小为$$r\theta'^2$$；$$2re^{i(\theta+\pi/2)}r'\theta'$$是**惯性加速度**，与环向一致，大小为$$2rr'\theta'$$。
+进一步我们还可以考虑加速度$$z''$$，不难计算$$z''=e^{i\theta}r''+re^{i(\theta+\pi/2)}\theta''-re^{i\theta}{\theta'}^2+2re^{i(\theta+\pi/2)}r'\theta'$$。其中$$e^{i\theta}r''$$是**径向加速度**，大小为$$r''$$；$$re^{i(\theta+\pi/2)}\theta''$$是**环向加速度**，大小为$$r\theta''$$；$$-re^{i\theta}{\theta'}^2$$是**向心加速度**，与径向相反，大小为$$r{\theta'}^2$$；$$2re^{i(\theta+\pi/2)}r'\theta'$$是**惯性加速度**，与环向一致，大小为$$2rr'\theta'$$。
