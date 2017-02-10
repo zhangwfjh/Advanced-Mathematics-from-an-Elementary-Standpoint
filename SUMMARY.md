@@ -17,14 +17,11 @@
 * [Derivatives](calculus/derivatives.md)
 * [Taylor Series](calculus/taylor-series.md)
 * [Integrals](calculus/integrals.md)
-* Differential Equations
 
 ## Linear Algebra
 
 * Vectors
-* Basis
 * Matrices
-* System of Linear Equations
 * Determinant
 * Linear Transformation
 * Eigenvalues
