@@ -63,4 +63,4 @@
 
 ![](/assets/derivatives2.png)
 
-进一步我们还可以考虑加速度$$z''$$，不难计算$$z''=e^{i\theta}r''+re^{i(\theta+\pi/2)}\theta''-re^{i\theta}\theta'^2+2re^{i(\theta+\pi/2)}r'\theta'$$。其中$$e^{i\theta}r''$$是**径向加速度**，大小为$$r''$$；$$re^{i(\theta+\pi/2)}\theta''$$是**环向加速度**，大小为$$r\theta''$$；$$-re^{i\theta}\theta'^2$$是**向心加速度**，与径向相反，大小为$$r\theta'^2$$；$$2re^{i(\theta+\pi/2)}r'\theta'$$是**惯性加速度**，与环向一致，大小为$$2rr'\theta'$$。
+进一步我们还可以考虑加速度$$z''$$，不难计算$$z''=e^{i\theta}r''+re^{i(\theta+\pi/2)}\theta''-re^{i\theta}{\theta'}^2+2re^{i(\theta+\pi/2)}r'\theta'$$。其中$$e^{i\theta}r''$$是**径向加速度**，大小为$$r''$$；$$re^{i(\theta+\pi/2)}\theta''$$是**环向加速度**，大小为$$r\theta''$$；$$-re^{i\theta}{\theta'}^2$$是**向心加速度**，与径向相反，大小为$$r\theta'^2$$；$$2re^{i(\theta+\pi/2)}r'\theta'$$是**惯性加速度**，与环向一致，大小为$$2rr'\theta'$$。
