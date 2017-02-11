@@ -20,7 +20,7 @@
 
 ## Linear Algebra
 
-* Vectors
+* [Vectors](linear-algebra/vectors.md)
 * Matrices
 * Determinant
 * Linear Transformation
