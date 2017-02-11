@@ -41,8 +41,7 @@
 
 * Homogeneous Coordinate
 * Cross Ratio
-* Projective Line
-* Projective Plane
+* Projective Space
 * Projective Transformation
 * Bracket Algebra
 * Conics
