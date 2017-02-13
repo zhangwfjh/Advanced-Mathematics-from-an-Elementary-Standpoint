@@ -21,9 +21,6 @@
 ## Linear Algebra
 
 * [Vectors](linear-algebra/vectors.md)
-  * Quadratic Form
-  * Quadratic Form
-  * Quadratic Form
 * [Matrices](linear-algebra/matrices.md)
 * Linear Transformation
 * Eigenvalues
