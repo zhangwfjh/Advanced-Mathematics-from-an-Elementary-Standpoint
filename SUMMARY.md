@@ -21,10 +21,13 @@
 ## Linear Algebra
 
 * [Vectors](linear-algebra/vectors.md)
-* Matrices
-* Determinant
+  * Quadratic Form
+  * Quadratic Form
+  * Quadratic Form
+* [Matrices](linear-algebra/matrices.md)
 * Linear Transformation
 * Eigenvalues
+* Quadratic Form
 * Geometric Algebra
 
 ## Group Theory
