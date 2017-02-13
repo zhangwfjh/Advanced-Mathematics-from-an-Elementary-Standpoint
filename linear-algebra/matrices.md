@@ -27,7 +27,7 @@ $$\begin{pmatrix}k_1&k_2&\cdots&k_n\end{pmatrix}\begin{pmatrix}b_{11}&b_{12}&\cd
 
 自然地，我们将上面的运算定义为行向量与矩阵的乘积，即$$(kB)_m:=k\cdot b^T_m=\sum_{i=1}^nk_ib_{im}$$。类似地，两个矩阵$$A=(a_1, a_2,\ldots, a_m), B=(b_1^T,b_2^T,\ldots,b_n^T)$$的乘积定义为$$(AB)_{ij}:=a_i\cdot b^T_j=\sum_{k=1}^la_{ik}b_{kj}$$。
 
-$$AB=\begin{pmatrix}— a_1 —\\—a_2—\\\vdots\\—a_m—\end{pmatrix}\begin{pmatrix}|&|&&|\\b^T_1&b^T_2&\cdots&b^T_n\\|&|&&|\end{pmatrix}=\begin{pmatrix}a_1\cdot b^T_1&a_1\cdot b^T_2&\cdots & a_1\cdot b^T_n\\a_2\cdot b^T_1&a_2\cdot b^T_2 & \cdots & a_2\cdot b^T_n \\ \vdots & \vdots & \ddots & \vdots \\ a_m\cdot b^T_1 & a_m\cdot b^T_2 & \cdots & a_m\cdot b^T_n\end{pmatrix}$$
+$$AB=\begin{pmatrix}—a_1—\\—a_2—\\\vdots\\—a_m—\end{pmatrix}\begin{pmatrix}|&|& &|\\b^T_1&b^T_2&\cdots&b^T_n\\|&|& &|\end{pmatrix}=\begin{pmatrix}a_1\cdot b^T_1&a_1\cdot b^T_2&\cdots & a_1\cdot b^T_n\\a_2\cdot b^T_1&a_2\cdot b^T_2 & \cdots & a_2\cdot b^T_n \\ \vdots & \vdots & \ddots & \vdots \\ a_m\cdot b^T_1 & a_m\cdot b^T_2 & \cdots & a_m\cdot b^T_n\end{pmatrix}$$
 
 显然，矩阵乘法不满足交换律，但是满足结合律。
 

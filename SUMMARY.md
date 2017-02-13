@@ -26,6 +26,7 @@
 * Eigenvalues
 * Quadratic Form
 * Geometric Algebra
+* Matrix Representation
 
 ## Group Theory
 
