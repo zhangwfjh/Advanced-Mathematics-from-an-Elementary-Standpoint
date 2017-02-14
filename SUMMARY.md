@@ -10,6 +10,7 @@
 * [Reals](numbers/reals.md)
 * [Complex numbers](numbers/complex-numbers.md)
 * [Infinitesimals](numbers/infinitesimals.md)
+* Quaternions
 
 ## Calculus
 
@@ -21,11 +22,12 @@
 ## Linear Algebra
 
 * [Vectors](linear-algebra/vectors.md)
+* [Geometric Algebra](linear-algebra/geometric-algebra.md)
 * [Matrices](linear-algebra/matrices.md)
+* Determinant
 * Linear Transformation
 * Eigenvalues
 * Quadratic Form
-* Geometric Algebra
 * Matrix Representation
 
 ## Group Theory

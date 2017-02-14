@@ -73,5 +73,3 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 * $$\mathop{tr}(A+B) = \mathop{tr} A + \mathop{tr} B$$
 * $$k\mathop{tr} A = \mathop{tr} (kA)$$ 对任意常数$$k\in\mathbb R$$成立
 * $$\mathop{tr} AB = \mathop{tr} BA$$
-
-### 行列式
