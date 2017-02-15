@@ -52,9 +52,7 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 * $$(A^T)^T=A, (AB)^T=B^TA^T$$
 * $$(AB)^T=B^TA^T, (AB)^{-1}=B^{-1}A^{-1}$$
 
-## 矩阵函数
-
-### 秩
+## 秩
 
 考虑矩阵$$A:=\begin{pmatrix}a_1& a_2& \ldots& a_n\end{pmatrix}$$，行向量$$a_1, a_2, \ldots, a_n$$的所有线性组合构成一个向量子空间，该空间的维数称作矩阵$$A$$的**行秩**。类似地，矩阵$$B:=(b^T_1, b^T_2, \ldots, b^T_n)$$的列向量的有限性组合构成一个向量子空间，该空间的维数称作矩阵$$B$$的**列秩**。对于任意矩阵，行秩等于列秩，统称为**秩**，记作$$\mathop{rk}A$$。
 
@@ -65,11 +63,3 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 * $$\mathop{rk}A=\mathop{rk}A^T=\mathop{rk}AA^T=\mathop{rk}A^TA$$
 * $$\mathop{rk}(A+B) \leq \mathop{rk}A + \mathop{rk}B$$
 * $$\mathop{rk}AB \leq \min\{\mathop{rk}A,\mathop{rk}B\}$$
-
-### 迹
-
-定义矩阵的对角线和为矩阵的**迹**，记作$$\mathop{tr} A:=\sum_{k=1}^nA_{kk}$$。不难证明，矩阵的迹满足：
-
-* $$\mathop{tr}(A+B) = \mathop{tr} A + \mathop{tr} B$$
-* $$k\mathop{tr} A = \mathop{tr} (kA)$$ 对任意常数$$k\in\mathbb R$$成立
-* $$\mathop{tr} AB = \mathop{tr} BA$$
