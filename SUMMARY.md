@@ -23,8 +23,8 @@
 * [Vectors](linear-algebra/vectors.md)
 * [Geometric Algebra](linear-algebra/geometric-algebra.md)
 * [Matrices](linear-algebra/matrices.md)
-* Eigenvalues
-* Quadratic Form
+* [Projective Geometry](linear-algebra/projective-geometry.md)
+* [Eigenvalues](linear-algebra/eigenvalues.md)
 
 ## Group Theory
 
@@ -35,16 +35,6 @@
 * Orbit and Stabilizer
 * Burnside's Lemma
 * Polya's Theorem
-
-## Projective Geometry
-
-* Homogeneous Coordinate
-* Cross Ratio
-* Projective Space
-* Projective Transformation
-* Bracket Algebra
-* Conics
-* Euclidean Geometry
 
 ## Probability and Stochasticity
 
