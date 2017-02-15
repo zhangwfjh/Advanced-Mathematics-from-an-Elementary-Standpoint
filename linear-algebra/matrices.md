@@ -80,7 +80,7 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 
 **证明**：令矩阵$$A,B$$分别按照行、列展开有$$A=(a_1~a_2~\cdots~a_n), B=(b_1^T,b_2^T,\cdots,b_n^T)$$，则矩阵$$A$$的可以看做是向量$$\{a_i\}_1^n$$在基$$\{b^T_i\}_1^n$$下的坐标表示，因此$$\det AB=|\sum_{k_1=1}^na_{1k_1}b_{k_1}\wedge\cdots\wedge\sum_{k_n=1}^na_{nk_n}b_{k_n}|$$，根据行列式的多线性和反交换性，有$$\det AB=\sum_{k_1,\cdots, k_n=1}^n\varepsilon_{k_1\cdots k_n}~a_{1k_1}\cdots a_{nk_n}|b_1\wedge\cdots\wedge b_n|$$，比较行列式定义，这正是$$\det A|b_1\wedge\cdots\wedge b_n|$$，亦是$$\det A\det B$$。
 
-行列式还可用于线性方程的求解，考虑线性方程组$$k_1b_1+k_2b_2+\cdots+k_nb_n=v$$，记$$b_{-m}=b_1\wedge\cdots\wedge\widehat {b_m}\wedge\cdots\wedge b_n$$，其中，$$\widehat {b_m}$$表示忽略该项，则有$$b_i\wedge b_{-m}=\delta_{im}b_m\wedge b_{-m}$$，将方程两边同时乘以$$b_{-m}$$，得到$$v\wedge b_{-m}=k_mb_m\wedge b_{-m}$$。此时方程两边均是$$n$$-向量，故系数$$k_m$$是两有向平行体的体积比，即$$k_m=|v\wedge b_{-m}|/|b_m\wedge b_{-m}|$$。通过调整顺序，还可写为$$k_m=\dfrac{\begin{vmatrix}|& &|& &|\\b^T_1&\cdots&v^T&\cdots&b^T_n\\|& &|& &|\end{vmatrix}}{\begin{vmatrix}|& &|& &|\\b^T_1&\cdots&b^T_m&\cdots&b^T_n\\|& &|& &|\end{vmatrix}}$$，这种解方程的方法称做**克拉默法则**。
+行列式还可用于线性方程的求解，考虑线性方程组$$k_1b_1+k_2b_2+\cdots+k_nb_n=v$$，记$$b_{-m}=b_1\wedge\cdots\wedge\hat {b_m}\wedge\cdots\wedge b_n$$，其中，$$\hat {b_m}$$表示忽略该项，则有$$b_i\wedge b_{-m}=\delta_{im}b_m\wedge b_{-m}$$，将方程两边同时乘以$$b_{-m}$$，得到$$v\wedge b_{-m}=k_mb_m\wedge b_{-m}$$。此时方程两边均是$$n$$-向量，故系数$$k_m$$是两有向平行体的体积比，即$$k_m=|v\wedge b_{-m}|/|b_m\wedge b_{-m}|$$。通过调整顺序，还可写为$$k_m=\dfrac{\begin{vmatrix}|& &|& &|\\b^T_1&\cdots&v^T&\cdots&b^T_n\\|& &|& &|\end{vmatrix}}{\begin{vmatrix}|& &|& &|\\b^T_1&\cdots&b^T_m&\cdots&b^T_n\\|& &|& &|\end{vmatrix}}$$，这种解方程的方法称做**克拉默法则**。
 
 ### 迹
 
@@ -92,9 +92,7 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 
 ## 矩阵表示
 
-考虑两个向量空间之间的映射$$L:V\to W$$，如果满足对任意$$u,v \in V, a,b \in \mathbb R$$满足$$L(au+bv)=aL(u)+bL(v)$$，则称$$L$$是从$$V$$到$$W$$的**线性变换**。给定$$V$$和$$W$$中的基$$\{e_i\}_1^n,\{f_j\}_1^m$$，则存在矩阵$$M$$使得$$L(e_i)=\sum_{j=1}^mM_{ij}f_j$$，我们称矩阵$$M$$是$$L$$的**矩阵表示**。
-
-我们来看几个例子。
+考虑两个向量空间之间的映射$$L:V\to W$$，如果满足对任意$$u,v \in V, a,b \in \mathbb R$$满足$$L(au+bv)=aL(u)+bL(v)$$，则称$$L$$是从$$V$$到$$W$$的**线性变换**。给定$$V$$和$$W$$中的基$$\{e_i\}_1^n,\{f_j\}_1^m$$，则存在矩阵$$M$$使得$$L(e_i)=\sum_{j=1}^mM_{ij}f_j$$，我们称矩阵$$M$$是$$L$$的**矩阵表示**。我们来看几个例子。
 
 * 复数：将复数$$z=a+bi$$看成二维向量$$z=(a,b)$$，则复数乘法$$(a,b)(c,d)=(ac-bd,ad+bc)$$是从$$\mathbb C$$到$$\mathbb C$$的线性变换，对应的矩阵表示为$$M_z=\begin{pmatrix}a&-b\\b&a\end{pmatrix}$$。特别地，单位复数$$z=\mathop{cis}\theta$$表示二维旋转，可用矩阵表示为$$\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$$。
 
