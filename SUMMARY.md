@@ -23,10 +23,8 @@
 * [Vectors](linear-algebra/vectors.md)
 * [Geometric Algebra](linear-algebra/geometric-algebra.md)
 * [Matrices](linear-algebra/matrices.md)
-* Linear Transformation
 * Eigenvalues
 * Quadratic Form
-* Matrix Representation
 
 ## Group Theory
 
