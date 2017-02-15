@@ -10,7 +10,6 @@
 * [Reals](numbers/reals.md)
 * [Complex numbers](numbers/complex-numbers.md)
 * [Infinitesimals](numbers/infinitesimals.md)
-* Quaternions
 
 ## Calculus
 
@@ -24,7 +23,6 @@
 * [Vectors](linear-algebra/vectors.md)
 * [Geometric Algebra](linear-algebra/geometric-algebra.md)
 * [Matrices](linear-algebra/matrices.md)
-* Determinant
 * Linear Transformation
 * Eigenvalues
 * Quadratic Form
