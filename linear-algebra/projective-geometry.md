@@ -26,7 +26,7 @@
 
 $$\begin{pmatrix}x&y&z\end{pmatrix}\begin{pmatrix}a&d&f\\d&b&e\\f&e&c\end{pmatrix}\begin{pmatrix}x\\y\\z\end{pmatrix}$$
 
-或者，$$\mathcal C:=\{p \in \mathbb {RP}^2 \vert (p,Ap)=0, A=A^T\}$$。我们考虑圆锥曲线与无穷远直线$$l_\infty$$的交点，只需令$$z=0$$，有$$ax^2+by^2+2dxy=\begin{pmatrix}x&y\end{pmatrix}\begin{pmatrix}a&d\\d&b\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=0$$，等式左侧的二次函数有判别式$$\Delta = (2dy)^2-4aby^2=-4y^2\begin{vmatrix}a&d\\d&b\end{vmatrix}$$。因此交点个数，根据行列式的符号，可为$$0、1$$或者$$2$$个，分别对应椭圆、抛物线和双曲线。
+或者，$$\mathcal C:=\{p \in \mathbb {RP}^2 \vert (p,Ap)=0, A=A^T\}$$。我们考虑圆锥曲线与无穷远直线$$l_\infty$$的交点，只需令$$z=0$$，有$$ax^2+by^2+2dxy=\begin{pmatrix}x&y\end{pmatrix}\begin{pmatrix}a&d\\d&b\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=0$$，等式左侧的二次函数有判别式$$\Delta = (2dy)^2-4aby^2=-4y^2\begin{vmatrix}a&d\\d&b\end{vmatrix}$$。因此交点个数，根据行列式的符号，可为$$0,1$$或者$$2$$个，分别对应椭圆、抛物线和双曲线。
 
 ![](/assets/projective_geometry2.PNG)
 
