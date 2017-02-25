@@ -20,7 +20,7 @@
 
 * $$(a+b\epsilon) \pm (c+d\epsilon)=(a \pm c)+(b \pm d)\epsilon$$
 * $$(a+b\epsilon)(c+d\epsilon)=ac+(ad+bc)\epsilon$$
-* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon)(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-\epsilon^2} = \frac ac - \frac{bc-ad}{c^2}\epsilon} \qquad (c \neq 0)$$
+* $$\displaystyle{\frac{a+b\epsilon}{c+d\epsilon} = \frac{(a+b\epsilon)(c-d\epsilon)}{(c+d\epsilon)(c-d\epsilon)} = \frac{ac+(bc-ad)\epsilon-bd\epsilon^2}{c^2-d^2\epsilon^2} = \frac ac + \frac{bc-ad}{c^2}\epsilon} \qquad (c \neq 0)$$
 
 ## 超实数
 
@@ -39,3 +39,6 @@
 * $$\mathop{st}({}^*r \pm {}^*s) = \mathop{st}{}^*r \pm \mathop{st}{}^*s$$
 * $$\mathop{st}({}^*r\cdot{}^*s) = \mathop{st}{}^*r \cdot \mathop{st}{}^*s$$
 * $$\mathop{st}\dfrac {^*r}{^*s} = \dfrac{\mathop{st}{}^*r}{\mathop{st}{}^*s} \qquad (\mathop{st}{}^*s \neq 0)$$
+
+
+

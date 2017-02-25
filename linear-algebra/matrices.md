@@ -25,14 +25,14 @@ $$\begin{pmatrix}k_1&k_2&\cdots&k_n\end{pmatrix}\begin{pmatrix}b_{11}&b_{12}&\cd
 
 该方程的几何解释为向量$$v$$在基$$B$$下的坐标是$$k$$，因为$$k_1b_1+k_2b_2+\cdots+k_nb_n=v$$。
 
-自然地，我们将上面的运算定义为行向量与矩阵的乘积，即$$(kB)_m:=k\cdot b^T_m=\sum_{i=1}^nk_ib_{im}$$。类似地，两个矩阵$$A=(a_1, a_2,\ldots, a_m), B=(b_1^T,b_2^T,\ldots,b_n^T)$$的乘积定义为$$(AB)_{ij}:=a_i\cdot b^T_j=\sum_{k=1}^la_{ik}b_{kj}$$。
+自然地，我们将上面的运算定义为行向量与矩阵的乘积，即$$(kB)_m:=k\cdot b^T_m=\sum_{i=1}^nk_ib_{im}$$。类似地，两个矩阵$$A=(a_1~ a_2~\ldots~ a_m), B=(b_1^T,b_2^T,\ldots,b_n^T)$$的乘积定义为$$(AB)_{ij}:=a_i\cdot b^T_j=\sum_{k=1}^la_{ik}b_{kj}$$。
 
 $$AB=\begin{pmatrix}-a_1-\\-a_2-\\\vdots\\-a_m-\end{pmatrix}\begin{pmatrix}|&|& &|\\b^T_1&b^T_2&\cdots&b^T_n\\|&|& &|\end{pmatrix}=\begin{pmatrix}a_1\cdot b^T_1&a_1\cdot b^T_2&\cdots & a_1\cdot b^T_n\\a_2\cdot b^T_1&a_2\cdot b^T_2 & \cdots & a_2\cdot b^T_n \\ \vdots & \vdots & \ddots & \vdots \\ a_m\cdot b^T_1 & a_m\cdot b^T_2 & \cdots & a_m\cdot b^T_n\end{pmatrix}$$
 
 显然，矩阵乘法不满足交换律，但是满足结合律。
 
-**注意** _不是任意两个矩阵都能相乘，只当前一个矩阵的列数等于后一个矩阵的行数时才可相乘。例如，如果$$A$$的大小为$$m\times l$$，$$B$$的大小为$$l\times n$$，则$$AB$$的大小为$$m\times n$$。_
-**注意** _如果将$$L_A(B):=AB$$看成是关于矩阵$$B$$的函数，则矩阵$$A$$相当于对$$B$$的每一列进行相同的**行变换**操作；如果将$$R_B(A):=AB$$看成是关于矩阵$$A$$的函数，则矩阵$$B$$相当于对$$A$$的每一行进行相同的**列变换**操作。_
+**注意** _不是任意两个矩阵都能相乘，只当前一个矩阵的列数等于后一个矩阵的行数时才可相乘。例如，如果_$$A$$_的大小为_$$m\times l$$_，_$$B$$_的大小为_$$l\times n$$_，则_$$AB$$_的大小为_$$m\times n$$_。_  
+**注意** _如果将_$$L_A(B):=AB$$_看成是关于矩阵_$$B$$_的函数，则矩阵_$$A$$_相当于对_$$B$$_的每一列进行相同的**行变换**操作；如果将_$$R_B(A):=AB$$_看成是关于矩阵_$$A$$_的函数，则矩阵_$$B$$_相当于对_$$A$$_的每一行进行相同的**列变换**操作。_
 
 我们还可以定义矩阵的加法和数乘：
 
@@ -85,9 +85,9 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 ### 迹
 
 定义矩阵的对角线和为矩阵的**迹**，记作$$\mathop{tr} A:=\sum_{k=1}^nA_{kk}$$。不难证明，矩阵的迹满足：
-		
-* $$\mathop{tr}(A+B) = \mathop{tr} A + \mathop{tr} B$$		
-* $$k\mathop{tr} A = \mathop{tr} (kA)$$ 对任意常数$$k\in\mathbb R$$成立		
+
+* $$\mathop{tr}(A+B) = \mathop{tr} A + \mathop{tr} B$$        
+* $$k\mathop{tr} A = \mathop{tr} (kA)$$ 对任意常数$$k\in\mathbb R$$成立        
 * $$\mathop{tr} AB = \mathop{tr} BA$$
 
 ## 矩阵表示
@@ -99,3 +99,6 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 * 对偶数：对偶数$$a+b\epsilon$$也可看作二维向量$$(a,b)$$，对偶数乘法$$(a,b)(c,d)=(ac,ad+bc)$$也是从$$\mathbb R^\epsilon$$到自身的线性变换，对应的矩阵表示为$$\begin{pmatrix}a&0\\b&a\end{pmatrix}$$。
 
 * 多项式：$$n$$阶一元多项式$$P(x)=a_0+a_1x+\cdots+a_nx^n$$可看作$$(n+1)$$-维向量$$p=(a_0,a_1,\cdots,a_n)$$，对$$x$$的导数是从$$\mathbb R^{n+1}$$到$$\mathbb R^{n}$$的线性运算，导数对应的矩阵表示$$D=\begin{pmatrix}0&1&0&\cdots&0\\0&0&2&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&0&\cdots&n\end{pmatrix}_{n\times(n+1)}$$，不难验证，$$Dp=(a_1,2a_2,\ldots,na_n)$$。类似地，积分也是从$$\mathbb R^{n+1}$$到$$\mathbb R^{n+2}$$的线性运算，对应的矩阵表示为$$S=\begin{pmatrix}0&0&\cdots&0\\1&0&\cdots&0\\0&\dfrac12&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&\dfrac1n\end{pmatrix}_{(n+2)\times(n+1)}$$，且$$Sp=(0,a_0,\frac12a_1,\ldots,\frac1{n+1}a_n)$$。
+
+
+
