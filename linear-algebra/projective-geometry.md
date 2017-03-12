@@ -6,7 +6,7 @@
 
 ![](/assets/projective_geometry1.png)
 
-在齐次坐标下，射影平面中的直线和点都可以用三维向量表示。或者说，一个向量既可以表示一个点，也可以表示一条直线。需要注意，如果一个点$$p_\infty=(x:y:0)$$，则不存在任何实数$$k$$，使得点$$p_\infty$$在平面$$z=1$$上找到对应点。也就是说，点$$p_\infty$$不是经典欧式空平面中的任何一点，但是它存在于射影平面中。现在考虑一个点的运动$$p(t)=(x_0+xt:y_0+yt:1)=(\dfrac{x_0}{t}+x:\dfrac{y_0}{t}+y:\dfrac1t)$$，这是从点$$(x_0:y_0:1)$$起沿方向$$(x,y)$$的匀速直线运动。当$$t\to\infty$$时，$$p(\infty)\to p_\infty=(x:y:0)$$。因此，点$$pp_\infty$$表示了一个在方位$$(x,y)$$的**无穷远点**。同样，直线$$l_\infty=(0:0:c)$$不对应欧式平面中的任何一条直线，但是，对任意无限远点$$p_\infty$$，满足$$l_\infty\cdotp_\infty=0$$，即直线$$l_\infty$$过任意无穷远点，称为**无穷远直线**。无穷远点有无限多个，但是无穷远直线只有一条，穿过所有无穷远点。因此，我们可以说，射影平面就是欧式平面附上一条无穷远直线。
+在齐次坐标下，射影平面中的直线和点都可以用三维向量表示。或者说，一个向量既可以表示一个点，也可以表示一条直线。需要注意，如果一个点$$p_\infty=(x:y:0)$$，则不存在任何实数$$k$$，使得点$$p_\infty$$在平面$$z=1$$上找到对应点。也就是说，点$$p_\infty$$不是经典欧式空平面中的任何一点，但是它存在于射影平面中。现在考虑一个点的运动$$p(t)=(x_0+xt:y_0+yt:1)=(\dfrac{x_0}{t}+x:\dfrac{y_0}{t}+y:\dfrac1t)$$，这是从点$$(x_0:y_0:1)$$起沿方向$$(x,y)$$的匀速直线运动。当$$t\to\infty$$时，$$p(\infty)\to p_\infty=(x:y:0)$$。因此，点$$p_\infty$$表示了一个在方位$$(x,y)$$的**无穷远点**。注意到该无穷远点与$$t\to\infty$$时的方向无关，说明射影平面中的直线是无全序的。同样，直线$$l_\infty=(0:0:c)$$不对应欧式平面中的任何一条直线，但是，对任意无限远点$$p_\infty$$，满足$$l_\infty\cdot p_\infty=0$$，即直线$$l_\infty$$过任意无穷远点，称为**无穷远直线**。无穷远点有无限多个，但是无穷远直线只有一条，穿过所有无穷远点。因此，我们可以说，射影全全全平面就是欧式平面附上一条无穷远直线。
 
 ## 对偶性
 
@@ -24,13 +24,13 @@
 
 一般地，圆锥曲线是二元二次齐次多项式在射影平面上零点的集合$$\mathcal C:=\{(x:y:z) \in \mathbb {RP}^2 \vert ax^2+by^2+cz^2+2dxy+2eyz+2fzx=0\}$$，若将其投影到平面$$z=1$$，得到$$\mathcal C_{z=1}:=\{(x,y) \in \mathbb R^2 \vert ax^2+by^2+2dxy+2fx+2ey+c=0\}$$。注意到齐次多项式可以写为矩阵形式，
 
-$$\begin{pmatrix}x&y&z\end{pmatrix}\begin{pmatrix}a&d&f\\d&b&e\\f&e&c\end{pmatrix}\begin{pmatrix}x\\y\\z\end{pmatrix}$$
+$$\begin{pmatrix}x&y&z\end{pmatrix}\begin{pmatrix}a&d&f\\d&b&e\\f&e&c\end{pmatrix}\begin{pmatrix}x\\y\\z\end{pmatrix}=0$$
 
 或者，$$\mathcal C:=\{p \in \mathbb {RP}^2 \vert (p,Ap)=0, A=A^T\}$$。我们考虑圆锥曲线与无穷远直线$$l_\infty$$的交点，只需令$$z=0$$，有$$ax^2+by^2+2dxy=\begin{pmatrix}x&y\end{pmatrix}\begin{pmatrix}a&d\\d&b\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=0$$，等式左侧的二次函数有判别式$$\Delta = (2dy)^2-4aby^2=-4y^2\begin{vmatrix}a&d\\d&b\end{vmatrix}$$。因此交点个数，根据行列式的符号，可为$$0,1$$或者$$2$$个，分别对应椭圆、抛物线和双曲线。
 
 ![](/assets/projective_geometry2.PNG)
 
-方程$$(p,Ap)=0$$可解释为点$$p$$在直线$$l_T=Ap$$上，我们证明，直线$$l_T$$实际为圆锥曲线在点$$p$$的切线。
+方程$$(p,Ap)=0$$可解释为点$$p$$在直线$$l_T=Ap$$上，我们证明，直线$$l_T$$实际为（非退化）圆锥曲线在点$$p$$的切线。
 
 **证明**：否则，存在圆锥曲线上另一点$$q$$满足$$(q,Aq)=0$$也在直线$$l_T$$上，即$$(q,l_T)=(q,Ap)=0$$，综上，$$(p-q,A(p-q))=(p,Ap)-(p,Aq)-(q,Ap)+(q,Aq)=-(q,Ap)$$。因为$$A=A^T$$是对称矩阵，有$$(q,Ap)=(A^Tq,p)=(Aq,p)=0$$，故$$(p-q,A(p-q))=0$$，即点$$p-q$$也在该圆锥曲线上。不难证明对于任意$$t\in \mathbb R$$都有$$l:=p(t)=p+t(q-p)$$在该圆锥曲线上。除非圆锥曲线包含一整条直线$$l$$，而对于非退化的圆锥曲线这是不可能的，只能有$$p=q$$。
 
@@ -40,7 +40,16 @@ $$\begin{pmatrix}x&y&z\end{pmatrix}\begin{pmatrix}a&d&f\\d&b&e\\f&e&c\end{pmatri
 
 ## 射影变换
 
-射影变换是射影平面上的一个可逆线性变换$$L:\mathbb{RP}^2\to\mathbb{RP}^2$$，因此，我们可以用$$3\times3$$的矩阵来表示$$L$$。
+射影变换是射影平面上的一个线性变换$$L:\mathbb{RP}^2\to\mathbb{RP}^2$$，因此，我们可以用$$3\times3$$的矩阵来表示$$L$$。显然，任意$$\mathbb R^2$$上的线性变换可以自然的扩展到$$\mathbb{RP}^2$$，即$$\begin{pmatrix}a&b\\c&d\end{pmatrix}\mapsto\begin{pmatrix}a&b&0\\c&d&0\\0&0&1\end{pmatrix}$$。
 
-考虑三个点$$p,q,r\in\mathbb{RP}^2$$，行列式$$|p\wedge q\wedge r|$$表示了以$$p,q,r$$构成的有向平行六面体的有向体积，简记为$$[pqr]$$。假设三个点都在有限远处，即$$p,q,r\in\mathbb{R}^2$$，并且嵌入到$$\mathbb R^3$$中的$$z=1$$平面上，那么$$[pqr]$$正比于三角形$$\Delta pqr$$的面积，若有$$[pqr]=0$$，则三点$$p,q,r$$共线。不难验证，对于三个无穷远点，关系$$[pqr]=0$$也成立。令另外三点$$p'=Lp,q'=Lq,r'=Lr$$是$$p,q,r$$射影变换后的点，则$$[p'q'r']=|L|[pqr]=0$$也成立。因此，射影变换把共线点映射到共线点。
+射影变换还包括了平移$$(x,y)=(x:y:1)\mapsto(x+e:y+f:1)=(x+e,y+f)$$，其矩阵表示为$$\begin{pmatrix}1&0&e\\0&1&f\\0&0&1\end{pmatrix}$$。以上两种运算的复合构成**仿射变换**，即$$(x,y)\mapsto(ax+by+e,cx+dy+f)$$，其矩阵表示为$$\begin{pmatrix}a&b&e\\c&d&f\\0&0&1\end{pmatrix}$$。
+特别的，仿射变换将无穷远点映射到无穷远点，即保持无穷远直线不变，故亦保持平行性质。这意味着任意一族平行线在仿射变换后仍为平行线。
+
+另一类射影变换为$$(x:y:1)\mapsto(x:y:gx+hy+1)$$，其矩阵表示为$$\begin{pmatrix}1&0&0\\0&1&0\\g&h&1\end{pmatrix}$$。这类射影变换不再保持平行性，因为它将无穷远点映射到了有限远处，同时也将有限远直线$$(g:h:1)$$映射为无穷远直线。因此，过直线$$(g:h:1)$$上一点的所有直线在射影变换后必平行。
+
+![](/assets/projective_geometry4.png)
+
+以上所有变换的复合都是射影变换，又由于坐标的齐次性，故任意$$3\times3$$的矩阵都是某个射影平面上的射影变换的表示。
+
+最后，我们考虑三个点$$p,q,r\in\mathbb{RP}^2$$，行列式$$|p\wedge q\wedge r|$$表示了以$$p,q,r$$构成的有向平行六面体的有向体积，简记为$$[pqr]$$。假设三个点都在有限远处，即$$p,q,r\in\mathbb{R}^2$$，并且嵌入到$$\mathbb R^3$$中的$$z=1$$平面上，那么$$[pqr]$$正比于三角形$$\Delta pqr$$的面积，若有$$[pqr]=0$$，则三点$$p,q,r$$共线。不难验证，对于三个无穷远点，关系$$[pqr]=0$$也成立。令另外三点$$p'=Lp,q'=Lq,r'=Lr$$是$$p,q,r$$射影变换后的点，则$$[p'q'r']=|L|[pqr]=0$$也成立。因此，射影变换把共线点映射到共线点。对偶的，射影变换把共点线映射到共点线。
 

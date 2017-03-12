@@ -90,7 +90,9 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 * $$k\mathop{tr} A = \mathop{tr} (kA)$$ 对任意常数$$k\in\mathbb R$$成立        
 * $$\mathop{tr} AB = \mathop{tr} BA$$
 
-## 矩阵表示
+## 线性变换
+
+### 矩阵表示
 
 考虑两个向量空间之间的映射$$L:V\to W$$，如果满足对任意$$u,v \in V, a,b \in \mathbb R$$满足$$L(au+bv)=aL(u)+bL(v)$$，则称$$L$$是从$$V$$到$$W$$的**线性变换**。给定$$V$$和$$W$$中的基$$\{e_i\}_1^n,\{f_j\}_1^m$$，则存在矩阵$$M$$使得$$L(e_i)=\sum_{j=1}^mM_{ij}f_j$$，我们称矩阵$$M$$是$$L$$的**矩阵表示**。我们来看几个例子。
 
@@ -100,5 +102,20 @@ $$\begin{pmatrix}k&0&\cdots&0\\0&k&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\c
 
 * 多项式：$$n$$阶一元多项式$$P(x)=a_0+a_1x+\cdots+a_nx^n$$可看作$$(n+1)$$-维向量$$p=(a_0,a_1,\cdots,a_n)$$，对$$x$$的导数是从$$\mathbb R^{n+1}$$到$$\mathbb R^{n}$$的线性运算，导数对应的矩阵表示$$D=\begin{pmatrix}0&1&0&\cdots&0\\0&0&2&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&0&\cdots&n\end{pmatrix}_{n\times(n+1)}$$，不难验证，$$Dp=(a_1,2a_2,\ldots,na_n)$$。类似地，积分也是从$$\mathbb R^{n+1}$$到$$\mathbb R^{n+2}$$的线性运算，对应的矩阵表示为$$S=\begin{pmatrix}0&0&\cdots&0\\1&0&\cdots&0\\0&\dfrac12&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&\dfrac1n\end{pmatrix}_{(n+2)\times(n+1)}$$，且$$Sp=(0,a_0,\frac12a_1,\ldots,\frac1{n+1}a_n)$$。
 
+### 几何变换
 
+为了简单起见，我们只考虑几种$$\mathbb R^2$$上的线性几何变换。
+
+* 伸缩变换：$$(x,y)\mapsto (ax,by)$$，矩阵表示为$$\begin{pmatrix}a&0\\0&b\end{pmatrix}$$
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Squeeze_r%3D1.5.svg/300px-Squeeze_r%3D1.5.svg.png)
+
+* 剪切变换：$$(x,y)\mapsto(x+cy,y+dx)$$，矩阵表示为$$\begin{pmatrix}1&c\\d&1\end{pmatrix}$$
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/VerticalShear_m%3D1.25.svg/350px-VerticalShear_m%3D1.25.svg.png)
+* 旋转变换: $$(x,y)\mapsto e^{i\theta}(x,y)$$，矩阵表示为$$\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$$
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rotation_by_pi_over_6.svg/250px-Rotation_by_pi_over_6.svg.png)
+
+注意到，旋转矩阵$$\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}=\begin{pmatrix}\cos\theta&0\\0&\cos\theta\end{pmatrix}\begin{pmatrix}1&-\tan\theta\\\tan\theta&1\end{pmatrix}$$是伸缩矩阵和剪切矩阵的乘积，因此旋转操作可以看作是伸缩和剪切的复合。实际上，任意$$2\times2$$的矩阵，总可以写以上基本矩阵的乘积。换句话说，任意$$\mathbb R^2$$上的线性变换，总是以上三种变换的复合。当然，复合的方式并不是唯一的。
 
