@@ -30,15 +30,12 @@
 
 * Groups
 * Homomorphism
-* Cosets
 * Group Action
-* Orbit and Stabilizer
-* Burnside's Lemma
-* Polya's Theorem
+* Counting
 
 ## Probability and Stochasticity
 
-* Probability as Measure
+* Probability Measure
 * Conditional Probability
 * Markov Processes
 
